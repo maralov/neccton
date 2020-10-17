@@ -1,8 +1,8 @@
 {
-    "name": "necctone",
-    "description": "necctone",
+    "name": "neccton",
+    "description": "neccton",
     "author": "maralov",
-    "license": "necctone",
+    "license": "neccton",
     "scripts": {
         "dev": "gulp",
         "build": "gulp prod --production",
