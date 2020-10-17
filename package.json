@@ -1,8 +1,8 @@
 {
-    "name": "project-name",
-    "description": "",
-    "author": "",
-    "license": "",
+    "name": "necctone",
+    "description": "necctone",
+    "author": "maralov",
+    "license": "necctone",
     "scripts": {
         "dev": "gulp",
         "build": "gulp prod --production",
@@ -62,7 +62,6 @@
         "gulp-webp-html": "^1.0.2",
         "smart-grid": "^2.1.2"
     },
-    
     "lint-staged": {
         "!(_*).scss": [
             "stylelint --fix --color --config ./.stylelintrc"
