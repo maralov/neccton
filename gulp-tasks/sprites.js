@@ -9,12 +9,14 @@ import browsersync from "browser-sync";
 gulp.task("sprites", () => {
     return gulp.src(paths.sprites.src)
         .pipe(svg({
-            shape: {
-                dest: "intermediate-svg"
-            },
+            // shape: {
+            //     //dest: "intermediate-svg",
+            //     transform: ['svgo'], 
+            // },
             mode: {
+                inline: true, // Prepare for inline embedding
                 stack: {
-                    sprite: "../sprite.svg"
+                    sprite: "../../svg/sprite.svg"
                 }
             }
         }))

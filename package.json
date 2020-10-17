@@ -1,12 +1,8 @@
 {
-    "name": "gulp-scss-starter",
-    "description": "Frontend development with pleasure",
-    "author": "Andrey Gorokhov",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/andreyalexeich/gulp-scss-starter.git"
-    },
-    "license": "MIT",
+    "name": "project-name",
+    "description": "",
+    "author": "",
+    "license": "",
     "scripts": {
         "dev": "gulp",
         "build": "gulp prod --production",
@@ -19,10 +15,6 @@
         "build:fonts": "gulp fonts --production",
         "build:favicons": "gulp favicons --production",
         "build:gzip": "gulp gzip --production",
-        "lint:styles": "stylelint \"src/**/*.scss\" --syntax=scss",
-        "lint:styles --fix": "stylelint \"src/**/*.scss\" --syntax=scss --fix",
-        "lint:scripts": "eslint --color ./src/blocks",
-        "lint:scripts --fix": "eslint --fix --color ./src/blocks",
         "bem-c": "bem create $* -l src/blocks/components",
         "bem-m": "bem create $* -l src/blocks/modules"
     },
@@ -61,16 +53,13 @@
         "imagemin-pngquant": "^9.0.0",
         "imagemin-webp": "^6.0.0",
         "imagemin-zopfli": "^7.0.0",
-        "lint-staged": "^10.0.3",
         "require-dir": "^1.2.0",
-        "stylelint": "^13.6.1",
-        "stylelint-order": "^4.1.0",
-        "stylelint-selector-bem-pattern": "^2.1.0",
         "webpack": "^4.30.0",
         "webpack-stream": "^5.2.1",
         "yargs": "^15.4.1"
     },
     "dependencies": {
+        "gulp-webp-html": "^1.0.2",
         "smart-grid": "^2.1.2"
     },
     "husky": {
