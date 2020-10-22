@@ -1,2 +1,12 @@
 @import "import/normalize";
 @import "import/smart-grid";
+
+
+//bootstrap
+@import "./bootstrap/functions";
+@import "./bootstrap/variables";
+@import "./bootstrap/mixins";
+@import "./bootstrap/bootstrap-grid";
+
+@import './slick-slider/slick-theme.scss';
+@import './slick-slider/slick';

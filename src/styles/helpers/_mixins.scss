@@ -41,6 +41,14 @@
   font: inherit;
   color: inherit;
   cursor: pointer;
-  outline: transparent;
+  outline: $transparent;
   white-space: normal;
+}
+
+@mixin hover {
+  @media screen and (min-width: 1024px) {
+      &:hover {
+          @content;
+      }
+  }
 }

@@ -1,0 +1,31 @@
+.btn {
+  @include  button-reset();
+  display: inline-flex;
+  min-width: 223px;
+  min-height: 64px;
+  padding: 24px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: $btn-bg;
+  border-radius: 40px;
+  color: $white;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color .3s ease;
+
+  @include hover {
+    text-decoration: none;
+    background-color: darken($btn-bg, 15%);
+  }
+
+  @include sm-block {
+    width: 100%;
+  }
+
+  &--full {
+  }
+}

@@ -1,4 +1,4 @@
-@mixin font($font_name, $file_name, $weight, $style) {
+@mixin font-face($font_name, $file_name, $weight, $style) {
 	@font-face {
 		font-family: $font_name;
 		font-display: swap;
@@ -7,4 +7,17 @@
 		font-weight: #{$weight};
 		font-style: #{$style};
 	}
+}
+
+
+@include font-face ('Gibson', 'Gibson-Light', 300, normal);
+@include font-face ('Gibson', 'Gibson', 400, normal);
+@include font-face ('Gibson', 'Gibson-SemiBold', 600, normal);
+
+body {
+	font-family: Gibson, serif;
+	font-size: rem(16);
+	font-weight: normal;
+	color: $base-txt-color;
+	@include sm(font-size, rem(18));
 }

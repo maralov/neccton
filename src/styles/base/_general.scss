@@ -1,19 +1,104 @@
-h1, h2, h3, h4, h5, h6, ul {
-    margin: 0;
-    padding: 0;
+.helper {
+    outline: 1px dotted deeppink;
+
+    &>* {
+        outline: 1px dotted blue;
+
+        &>* {
+            outline: 1px dotted green;
+
+            &>* {
+                outline: 1px dotted red;
+
+                &>* {
+                    outline: 1px dotted red;
+                }
+            }
+        }
+    }
 }
 
 @include reset();
 
-.container {
-    @include container();
-    @include sm(max-width, rem(510));
-    @include md(max-width, rem(690));
-    @include lg(max-width, rem(930));
+html {
+    font-size: ($root-font-size / 16px) * 100%;
+    height: 100%
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    color: $base-txt-color;
+    background-color: #fff;
+
+    main {
+        flex: 1 0 auto;
+    }
+
+    footer {
+        flex: 0 0 auto;
+    }
+}
+
+a:not([class]) {
+    color: inherit;
+    text-decoration: underline;
+
+    @include hover {
+        text-decoration: none;
+    }
+}
+
+a[class] {
+    color: inherit;
+    text-decoration: none;
+
+    @include hover {
+        text-decoration: none;
+    }
+}
+
+.wrapper-full {
+    @include wrapper-full();
+}
+
+.wrapper {
+    width: 100%;
+    @include wrapper();
+    @include sm(max-width, 100%);
+
+    @include md-block {
+        max-width: rem(720);
+        // padding-left: rem(24);
+        // padding-right: rem(24);
+    }
+
+    @include lg(max-width, rem(950));
     @include xl(max-width, rem(1110));
 }
 
-.d {
-    max-width: 400px;
-    margin: 0 auto;
+.container {
+    @include md-block {
+        padding-left: rem(24);
+        padding-right: rem(24);
+    }
+}
+
+.scrolled {
+    overflow: hidden;
+}
+
+.banner {
+    padding-top: rem(95);
+
+    @include lg-block {
+        padding-top: rem(141);
+    }
+
+    @include sm-block {
+        padding-top: rem(95);
+    }
 }

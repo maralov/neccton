@@ -1,0 +1,23 @@
+
+.header-nav {
+  font-size: rem(18);
+  color: $white;
+  &__link {
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-right: rem(52);
+    border-bottom: 2px solid $transparent;
+    padding: rem(12) 0 rem(10);
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: opacity .2s;
+    @include hover {
+      opacity: .7;
+    }
+
+    @include lg-block {
+      margin: 0;
+    }
+  }
+  // .header-nav__link
+}

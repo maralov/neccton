@@ -1,0 +1,39 @@
+
+.subtitle {
+  color: $txt-subtitle;
+  text-transform: uppercase;
+  font-size: rem(20);
+  line-height: 100%;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.font-weight-normal {
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.section-heading {
+  color: $primary-dark;
+  font-size: rem(40);
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: $primary-color;
+    margin-bottom: 8px;
+  }
+}
+.section-desc {
+  font-weight: 300;
+  font-size: 32px;
+  
+}

@@ -1,0 +1,78 @@
+.about-section {
+
+  padding: 7.55% 0 7%;
+  background-color: $light-grey;
+
+  @include from (1440.98px) {
+    padding: rem(110) 0 rem(100);
+  }
+
+  @include sm-block {
+    padding: rem(64) 0;
+  }
+
+  &__subtitle {
+    font-weight: normal;
+    font-size: rem(20);
+    max-width: rem(277);
+    @include sm (font-size, rem(24))
+  }
+  // .about-section__subtitle
+
+  &__desc {
+    @include from-to (600px, 900px) {
+      font-size: rem(26);
+    }
+  }//about-section__desc
+}
+
+
+.about-benefit {
+  display: flex;
+  max-width: rem(260);
+
+  @include sm (align-items, center);
+  
+  &__ic {
+    width: 32px;
+    height: 32px;
+    margin-right: rem(16);
+
+    @include sm-block {
+      width: 42px;
+      height: 42px;
+      margin-right: rem(20);
+    }
+  }
+  // .about-benefit__ic
+
+  
+  &__desc {
+    font-size: rem(18);
+  }
+  // .about-benefit__desc
+}
+
+
+.about-review-bg {
+  @include from (600px) {
+    position: relative;
+  
+    &:before {
+      content: '';
+      display: block;
+      width: 60%;
+      height: 200px;
+      background: url('../img/bg-dots.png') no-repeat center / cover;
+      position: absolute;
+      right: 40px;
+      bottom: -60px;
+  
+      @include xl (bottom, -20px);
+      @include md-block {
+        bottom: 0px;
+        right: 0px;
+      } 
+    }
+  }
+}
