@@ -1,0 +1,166 @@
+.numbers {
+
+  padding: 80px 0 ;
+  background-color: $dark-navy;
+  @include sm(padding, 64px 0);
+}
+
+.number-block {
+  position: relative;
+  width: 155px;
+  color: #C4C7CD;
+  text-align: center;
+
+  @include hover {
+
+    .number-block__num {
+      color: #FFFFFF;
+    }
+
+  }
+  // .number-block__num
+
+  &__num {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 10px;
+    @include sm(font-size, 38px);
+  }
+
+  // .number-block__param
+
+  &__param {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+    color: #FFFFFF;
+
+    @include sm(font-size, 9px);
+  }
+
+  // .number-block__line
+
+  &__line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(19, 19, 56, 0) 0%, #FFFFFF 50%, rgba(175, 175, 238, 0) 100%);
+    margin-bottom: 14px;
+  }
+
+  // .number-block__text
+
+  &__text {
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 1px;
+    @include sm(font-size, 12px);
+
+  }
+
+  // .number-block__ring
+
+  &__ring {
+    @include center-absolute;
+    opacity:0;
+    transition: opacity .5s ease;
+    border-radius:50%;
+    border:3px solid ;
+    height: 130%;
+    width: 130%;
+    @include hover {
+      animation: 3s rotate infinite linear;
+      &:after {
+        animation: 5s rotate infinite linear;
+      }
+      &:before{
+        animation: 7s rotate infinite linear;
+      }
+    }
+
+    @include md-block {
+      animation: 3s rotate infinite linear;
+    }
+    
+    @include sm-block {
+      height: 180px;
+      width: 165px;
+    }
+
+    &:before,
+    &:after {
+      content:'';
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) ;
+      position: absolute;
+      border-radius:50%;
+      border-style: solid;
+    }
+
+    &:before {
+      border-width: 2px;
+      height: 102%;
+      width: 98%;
+      @include md-block {
+        animation: 5s rotate infinite linear;
+      }
+    }
+    &:after {
+      border:1px solid #fff;
+      height: 98%;
+      width: 102%;
+      transition: opacity .5s ease;
+      @include md-block {
+        animation: 4s rotate infinite linear;
+      }
+    }
+  }
+}
+
+.number-block-1{
+  .number-block__ring {
+    border-color: #6276EE;
+    &:before {
+      border-color:  #57B7C3;
+    }
+  }
+}
+.number-block-2{
+  .number-block__ring {
+    border-color: #EA863D;
+    &:before {
+      border-color:  #F8E32A;
+    }
+  }
+}
+.number-block-3{
+  .number-block__ring {
+    border-color: #ED7EFF;
+    &:before {
+      border-color:  #8F85FF;
+    }
+  }
+}
+.number-block-4{
+  .number-block__ring {
+    border-color: #6AE7C9;
+    &:before {
+      border-color:  #7591DA;
+    }
+  }
+}
+
+@keyframes rotate {
+  from { 
+    opacity:1;
+  }
+  to {    
+    opacity:1;
+    transform:  translate(-50%, -50%) rotate(360deg);
+  }
+}

@@ -1,0 +1,93 @@
+.service-nav {
+  width: 100vw;
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  @include sm-block {
+    overflow-x: scroll;
+    width: 90vw;
+
+    &::-webkit-scrollbar {
+        width: 0px;  /* remove scrollbar space */
+        background: $transparent;  /* optional: just make scrollbar invisible */
+        display: none;
+    }
+    /* optional: show position indicator in red */
+    &::-webkit-scrollbar-thumb {
+        background: $transparent;
+    }
+  }
+  // .service-nav__item
+
+  &__item {
+    flex-shrink: 0;
+    padding: 12px 24px;
+    border-radius: 32px;
+    background-color: $transparent;
+    transition: background-color .3s ease;
+    @include hover {
+      //font-weight: 600;
+      color: #fff;
+    }
+
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+
+    &--laud {
+      @include hover {
+        background-color: $primary-color;
+      }
+
+      &.active {
+        background-color: $primary-color;
+        color: #fff;
+      }
+    }
+    &--game{
+      @include hover {
+        background-color: $secondary-color;
+      }
+      &.active {
+        background-color: $secondary-color;
+        color: #fff;
+      }
+    }
+    &--fraud {
+      @include hover {
+        background-color: $additional-color;
+      }
+      &.active {
+        background-color: $additional-color;
+        color: #fff;
+      }
+    }
+    &--crm {
+      @include hover {
+        background-color: $additional-color-2;
+      }
+      &.active {
+        background-color: $additional-color-2;
+        color: #fff;
+      }
+    }
+  }
+
+  // .service-nav__link
+
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-gap {
+    margin-bottom: 80px;
+
+    @include sm-block {
+      margin-bottom: 40px;
+    }
+  }
+}
+

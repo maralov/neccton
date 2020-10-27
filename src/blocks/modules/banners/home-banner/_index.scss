@@ -1,12 +1,13 @@
 
 .main-banner {
   background:url('../img/main-banner-bg.jpg') no-repeat center / cover $main-banner-bg ;
- 
+
   @include md-block {
     padding: rem(241) 0 rem(80);
   }
+  
   @include sm-block {
-    padding-top: rem(140);
+    padding-top: rem(95);
   }
 
   @include xs-block {

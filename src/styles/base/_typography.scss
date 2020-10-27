@@ -5,7 +5,7 @@
   font-size: rem(20);
   line-height: 100%;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .font-weight-normal {
@@ -32,8 +32,25 @@ strong {
     margin-bottom: 8px;
   }
 }
+
+.section-subtitle{
+  font-weight: normal;
+  font-size: rem(20);
+  @include sm (font-size, rem(24))
+}
+// .section-subtitle
+
 .section-desc {
   font-weight: 300;
-  font-size: 32px;
+  font-size: rem(32);
   
+  &--m {
+    font-size: rem(24);
+    line-height: 1.6;
+    @include sm (font-size, rem(20))
+  }
+}
+
+.txt-muted {
+  color:  $txt-muted;
 }

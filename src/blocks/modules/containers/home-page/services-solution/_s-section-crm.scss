@@ -1,0 +1,50 @@
+
+
+.s-section-crm {
+  background-color: $crm-section-bg;
+  padding: 74px 0 100px;
+
+  @include sm(padding, 64px 0);
+  
+  &__image-bg {
+    background: url('../img/bg-srm-solutions.png') no-repeat right bottom / contain;
+
+    @include sm-block {
+      padding-bottom: 24px;
+    }
+
+    @media screen and (min-width: 1024.98px) {
+      margin-top: 0;
+    }
+
+    img {
+      max-width: 90%;
+      margin: 0 auto;
+      object-position: top;
+
+      @media (min-width: 768.98px) {
+        max-width: 455px;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        left: 50px;
+        right: auto;
+      }
+    }
+  }
+
+  &__desc {
+    margin-bottom: 24px;
+    @media screen and (min-width: 600px) {
+      margin-bottom: 50px;
+    }
+    // @include sm(margin-bottom, 32px);
+  }
+
+  &__info {
+    @media screen and (min-width: 1024.98px) {
+      padding-left: 100px;
+    }
+  }
+}
+//.s-section-fraud

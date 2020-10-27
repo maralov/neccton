@@ -4,6 +4,11 @@
   left: 0;
   top: 0;
   width: 100vw;
+
+  @include sm-block {
+    background-color: $dark-navy;
+  }
+
   &__wrapper {
     max-width: rem(1340);
     margin: 0 auto;
@@ -33,7 +38,6 @@
   }
   // .header__logo
 
-  
   &__nav {
     margin-left: auto;
     @include lg-block {
@@ -49,8 +53,6 @@
     }
   }
   // .header__nav
-
-
 }
 
 
@@ -68,6 +70,7 @@
     .header__wrapper {
       padding-bottom: rem(8);
     }
+
     .header__nav {
       padding-top: rem(0);
     }

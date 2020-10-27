@@ -1,0 +1,29 @@
+.solution-list {
+  font-size: 18px;
+  // .solution-list__item
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    width: 49%;
+    position: relative;
+
+    @include sm-block{
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      margin-right: 16px;
+      background: url(../img/ic-solution-list-bullet.svg) no-repeat center / contain;
+    }
+  }
+}
+

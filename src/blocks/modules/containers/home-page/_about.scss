@@ -11,11 +11,8 @@
     padding: rem(64) 0;
   }
 
-  &__subtitle {
-    font-weight: normal;
-    font-size: rem(20);
+  &__subtitle{
     max-width: rem(277);
-    @include sm (font-size, rem(24))
   }
   // .about-section__subtitle
 

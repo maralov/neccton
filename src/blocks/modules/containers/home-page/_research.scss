@@ -1,0 +1,45 @@
+.research {
+  background-color: $light-beige;
+  padding: 90px 0 154px;
+  @include md(padding, 90px 0);
+  @include sm(padding, 64px 0);
+
+  &__title {
+    margin-bottom: 80px;
+    @include sm(margin-bottom, 24px);
+  }
+
+  &-link {
+    display: block;
+    // height: 62px;
+    width: 178px;
+    padding-right: 12px;
+
+    @include hover {
+      background-color: #fff;
+    }
+  }
+  //.reasearch-link
+
+  &-item {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.6;
+    &__sub-txt {
+      color: $txt-muted;
+      font-weight: 300;
+      font-style: italic;
+    }
+  }
+  //.reasearch-item
+}
+
+.researches {
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}
+

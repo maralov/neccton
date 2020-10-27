@@ -1,0 +1,18 @@
+.link {
+  @include button-reset;
+  background-color: $transparent;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: .5px;
+  color: $link-color;
+
+  @include hover {
+    text-decoration: underline;
+
+  }
+}
+
+.link-arrow {
+  max-height: 30px;
+  max-width: 30px;
+}

@@ -1,0 +1,54 @@
+
+
+.s-section-fraud {
+  background-color: $fraud-section-bg;
+  padding: 74px 0 130px;
+
+  @include sm(padding, 64px 0);
+  
+  &__image-bg {
+    background: url('../img/bg-fraud-solutions.png') no-repeat left bottom / contain;
+    @include sm(padding-bottom, 24px);
+
+    @media screen and (min-width: 1024.98px) {
+      margin-top: 0;
+    }
+
+    @media screen and (min-width: 1900.98px) {
+      background-size: cover;
+    }
+    
+    img {
+      max-width: 90%;
+      margin: 0 auto;
+      height: 300px;
+      object-fit: cover;
+      object-position: top;
+
+      @media (min-width: 600px) {
+        height: 550px;
+      }
+
+      @media (min-width: 768.98px) {
+        max-width: 460px;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        left: auto;
+        right: 60px;
+      }
+    }
+  }
+
+  &__desc {
+    margin-bottom: 80px;
+    @include sm(margin-bottom, 32px);
+  }
+
+  &__info {
+    @media screen and (min-width: 1024.98px) {
+      padding-left: 100px;
+    }
+  }
+}
+//.s-section-fraud

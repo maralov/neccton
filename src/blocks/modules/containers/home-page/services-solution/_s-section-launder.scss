@@ -1,0 +1,42 @@
+.s-section-launder {
+  background-color: $laund-section-bg;
+  padding: 74px 0 110px;
+
+  @include sm(padding, 64px 0);
+  
+  &__image-bg {
+    background: url('../img/bg-laud-solutions.png') no-repeat left bottom / contain;
+
+    @include sm(padding-bottom, 24px);
+
+    @media screen and (min-width: 1024.98px) {
+      margin-top: 0;
+    }
+
+    @media screen and (min-width: 1900.98px) {
+      background-size: cover;
+    }
+    
+    img {
+      max-width: 90%;
+      margin: 0 auto;
+      @media (min-width: 768.98px) {
+        max-width: 640px;
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+
+  &__desc {
+    margin-bottom: 80px;
+    @include sm(margin-bottom, 32px);
+  }
+
+  &__info {
+    @media screen and (min-width: 1024.98px) {
+      padding-left: 100px;
+    }
+  }
+}
+//.service-section-launder

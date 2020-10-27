@@ -1,1 +1,14 @@
-@import './home-banner/index'
+@import './home-banner/index';
+
+
+.banner {
+  padding: rem(95) 0;
+
+  @include lg-block {
+      padding-top: rem(141);
+  }
+
+  @include sm-block {
+      padding: rem(95) 0;
+  }
+}
