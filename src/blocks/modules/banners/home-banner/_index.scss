@@ -1,14 +1,20 @@
 
 .main-banner {
   background: url('../img/main-banner-bg.jpg') no-repeat center / cover $main-banner-bg ;
+  position: relative;
+  &:after {
+    content: '';
+    width: 700px;
+    height: 720px;
+    background: url('../img/bg-logo-header.svg') no-repeat center / contain;
+    position: absolute;
+    right: 15%;
+    top: 20%;
+  }
 
   @include md-block {
     padding: rem(241) 0 rem(80);
   }
-  
-  // @include sm-block {
-  //   padding-top: rem(95);
-  // }
 
   @include xs-block {
     padding: 100px 0 55px;

@@ -86,7 +86,9 @@
 
 .fixed-header {
   background-color: $dark-navy;
-
+  .header__wrapper {
+    min-height: auto;
+  }
   @include xxl-block {
     .header__wrapper {
       padding-top: rem(12);
