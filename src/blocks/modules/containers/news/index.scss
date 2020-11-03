@@ -1,0 +1,9 @@
+.news-filters {
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 38px;
+      
+    }
+  }
+}

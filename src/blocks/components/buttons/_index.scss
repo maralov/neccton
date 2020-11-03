@@ -1,9 +1,11 @@
+@import './filterButton.scss';
+
 .btn {
   @include  button-reset();
   display: inline-flex;
   min-width: 223px;
   min-height: 64px;
-  padding: 24px;
+  padding: 16px 24px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -27,5 +29,6 @@
   }
 
   &--full {
+    width: 100%;
   }
 }

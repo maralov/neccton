@@ -1,6 +1,6 @@
 
 .main-banner {
-  background:url('../img/main-banner-bg.jpg') no-repeat center / cover $main-banner-bg ;
+  background: url('../img/main-banner-bg.jpg') no-repeat center / cover $main-banner-bg ;
 
   @include md-block {
     padding: rem(241) 0 rem(80);

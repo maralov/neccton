@@ -19,7 +19,7 @@ const argv = yargs.argv,
 gulp.task("images", () => {
     return gulp.src(paths.images.src)
         .pipe(newer(paths.images.dist))
-        .pipe(gulpif(production, imagemin([
+        /*.pipe(gulpif(production, imagemin([
             imageminGiflossy({
                 optimizationLevel: 3,
                 optimize: 3,
@@ -48,7 +48,7 @@ gulp.task("images", () => {
                     { collapseGroups: true }
                 ]
             })
-        ])))
+        ])))*/
         .pipe(gulp.dest(paths.images.dist))
         .pipe(debug({
             "title": "Images"

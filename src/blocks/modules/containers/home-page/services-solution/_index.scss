@@ -41,3 +41,10 @@
   }
 } 
 //.s-section
+
+._s-row-mob {
+  @include sm-block {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+}

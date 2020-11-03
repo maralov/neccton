@@ -4,24 +4,34 @@ $secondary-color: #57B7C3;
 $primary-color: #EA863D;
 $additional-color: #6276EE;
 $additional-color-2: #54CB51;
-$link-color: #2F80ED;
+$link-color:$additional-color;
 $light-grey: #F5F7FC;
 
-$transparent: rgba(73, 31, 31, 0);
+$transparent: rgba(0, 0, 0, 0);
 
 $base-txt-color: #000000;
-$txt-muted: #7D7D85;
 $primary-dark: #232228;
+$txt-muted: #7D7D85;
 $light-beige:#F9F9FA;
-$footer-bg: $dark-navy;
+
 $laund-section-bg: #FFF3EB;
 $fraud-section-bg: #F0F2FE;
 $game-section-bg: #EFF8F9;
 $crm-section-bg: #EEFAEE;
+$input-color:  $primary-dark;
+$input-placeholder-color:  rgba(46, 46, 46, 0.28);
+$footer-bg: $dark-navy;
+$footer-nav-txt-color: rgba(255, 255, 255, 0.64);
+$footer-nav-txt-color-active: rgba(255, 255, 255, 1);
 
 $main-banner-bg: $dark-navy;
 
 $btn-bg: $primary-color;
 
+$filter-btn-txt-color: rgba(24, 24, 42, 0.29);
+$filter-btn-active-txt-color: $primary-dark;
+
 $txt-subtitle: $secondary-color;
 
+$dots-bg: rgba(24, 24, 42, 0.11);
+$dots-active-bg: $additional-color;

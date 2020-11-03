@@ -25,7 +25,13 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="preload" href="fonts/Gibson-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Gibson.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Gibson-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Gibson-Light.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Gibson.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Gibson-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
@@ -37,10 +43,10 @@
 </a>
     </div>
     <nav class="header__nav header-nav">
-      <a href="" class="header-nav__link">About</a>
-      <a href="" class="header-nav__link">services and solutions</a>
-      <a href="" class="header-nav__link">news</a>
-      <a href="" class="header-nav__link">Contact</a>
+      <a href="#about" class="js-scroll header-nav__link">About</a>
+      <a href="#services" class="js-scroll header-nav__link">services and solutions</a>
+      <a href="/news.html" class="header-nav__link">news</a>
+      <a href="#getInTouch" class="js-scroll header-nav__link">Contact</a>
     </nav>
     <div class="header__menu-btn">
       <button class="toggle-menu js-toggle-menu">
@@ -212,7 +218,7 @@
             </div>
         </section>
         <!-- about-section -->
-        <section class="s-section">
+        <section id="services" class="s-section">
 
 	<div class="wrapper">
 		<div class="row mb-4 mb-lg-3">
@@ -262,8 +268,8 @@
 
 <section id="launder" class="s-section-launder">
 	<div class="wrapper">
-		<div class="row overflow-hidden">
-			<div class="col pr-0">
+		<div class="row _s-row-mob overflow-hidden">
+			<div class="col px-4 px-sm-3">
 				<ul class="service-nav service-nav-gap">
 					<li class="service-nav__item service-nav__item--laud active">
 						<a href="#launder" class="js-scroll service-nav__link"> Anti Money Laundering </a>
@@ -271,7 +277,7 @@
 					<li class="service-nav__item service-nav__item--game ">
 						<a href="#game" class="js-scroll service-nav__link">Responsible Gaming</a>
 					</li>
-					<li class="service-nav__item service-nav__item--faud">
+					<li class="service-nav__item service-nav__item--fraud">
 						<a href="#fraud" class="js-scroll service-nav__link">FRAUD Detection</a>
 					</li>
 					<li class="service-nav__item service-nav__item--crm">
@@ -313,8 +319,8 @@
 <!-- s-section-launder -->
 <section id="game" class="s-section-game">
 	<div class="wrapper">
-		<div class="row overflow-hidden">
-			<div class="col pr-0">
+		<div class="row _s-row-mob overflow-hidden">
+			<div class="col px-4 px-sm-3">
 				<ul class="service-nav service-nav-gap">
 					<li class="service-nav__item service-nav__item--laud ">
 						<a href="#launder" class="js-scroll service-nav__link"> Anti Money Laundering </a>
@@ -322,7 +328,7 @@
 					<li class="service-nav__item service-nav__item--game active">
 						<a href="#game" class="js-scroll service-nav__link">Responsible Gaming</a>
 					</li>
-					<li class="service-nav__item service-nav__item--faud">
+					<li class="service-nav__item service-nav__item--fraud">
 						<a href="#fraud" class="js-scroll service-nav__link">FRAUD Detection</a>
 					</li>
 					<li class="service-nav__item service-nav__item--crm">
@@ -365,8 +371,8 @@
 
 <section id="fraud" class="s-section-fraud">
 	<div class="wrapper">
-		<div class="row overflow-hidden">
-			<div class="col pr-0">
+		<div class="row _s-row-mob overflow-hidden">
+			<div class="col px-4 px-sm-3">
 				<ul class="service-nav service-nav-gap">
 					<li class="service-nav__item service-nav__item--laud ">
 						<a href="#launder" class="js-scroll service-nav__link"> Anti Money Laundering </a>
@@ -413,8 +419,8 @@
 
 <section id="crm" class="s-section-crm">
 	<div class="wrapper">
-		<div class="row overflow-hidden">
-			<div class="col pr-0">
+		<div class="row _s-row-mob overflow-hidden">
+			<div class="col px-4 px-sm-3">
 				<ul class="service-nav service-nav-gap">
 					<li class="service-nav__item service-nav__item--laud ">
 						<a href="#launder" class="js-scroll service-nav__link"> Anti Money Laundering </a>
@@ -422,7 +428,7 @@
 					<li class="service-nav__item service-nav__item--game ">
 						<a href="#game" class="js-scroll service-nav__link">Responsible Gaming</a>
 					</li>
-					<li class="service-nav__item service-nav__item--faud">
+					<li class="service-nav__item service-nav__item--fraud">
 						<a href="#fraud" class="js-scroll service-nav__link">FRAUD Detection</a>
 					</li>
 					<li class="service-nav__item service-nav__item--crm active">
@@ -477,7 +483,7 @@
                 </div>
                 <!-- row -->
                 <div class="row pt-5 pt-sm-5">
-                    <div class="mb-5 mb-md-0 py-5 py-md-0 col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+                    <div class="mb-5 mb-md-0 py-5 py-md-0 col-6 col-md-3 d-flex justify-content-center">
                         <div class="number-block number-block-1">
                             <div class="number-block__num">10</div>
                             <div class="number-block__param">MILLION</div>
@@ -487,7 +493,7 @@
                         </div>
                     </div>
                     <!-- ./col -->
-                    <div class="mb-5 mb-md-0 py-5 py-md-0 col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+                    <div class="mb-5 mb-md-0 py-5 py-md-0 col-6 col-md-3 d-flex justify-content-center">
                         <div class="number-block number-block-2">
                             <div class="number-block__num">10</div>
                             <div class="number-block__param">Billion</div>
@@ -497,7 +503,7 @@
                         </div>
                     </div>
                     <!-- ./col -->
-                    <div class="mb-5 mb-sm-0 py-5 py-sm-0 col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+                    <div class="mb-5 mb-sm-0 py-5 py-md-0 col-6 col-md-3 d-flex justify-content-center">
                         <div class="number-block number-block-3">
                             <div class="number-block__num">20</div>
                             <div class="number-block__param">AMAZING</div>
@@ -507,7 +513,7 @@
                         </div>
                     </div>
                     <!-- ./col -->
-                    <div class="mb-5 mb-sm-0 pt-5 pt-sm-0 col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+                    <div class="mb-5 mb-sm-0 py-5 py-md-0 col-6 col-md-3 d-flex justify-content-center">
                         <div class="number-block number-block-4">
                             <div class="number-block__num">25</div>
                             <div class="number-block__param">POPULAR</div>
@@ -787,7 +793,7 @@
         </section>
         <!-- ref -->
 
-        <section class="research">
+        <section id="research" class="research">
             <div class="wrapper">
                 <div class="row justify-content-between">
                     <div class="col-12 research__title">
@@ -819,51 +825,70 @@
                     <div class="col-12 col-md-7 border-left align-self-start">
                         <div class="researches decor-border pb-4 px-md-5">
                             <div class="research-item researches__item">
-                                Cognitive dissonance, personalized feedback... International Journal of Mental Health and Addiction, 16(3),631-641.<span class="research-item__sub-txt"> Auer, M., & Griffiths, M. D. (2018).</span>
+                                Cognitive dissonance, personalized feedback... International Journal of Mental Health
+                                and Addiction, 16(3),631-641.<span class="research-item__sub-txt"> Auer, M., &
+                                    Griffiths, M. D. (2018).</span>
                             </div>
                             <!-- /.research-item -->
                             <div class="research-item researches__item">
-                                Global Limit Setting as a Responsible ... International Journal of Mental Health and Addiction, 1-13.<span class="research-item__sub-txt"> Auer, M., Reiestad, S. H., & Griffiths, M. D. (2018).</span>
+                                Global Limit Setting as a Responsible ... International Journal of Mental Health and
+                                Addiction, 1-13.<span class="research-item__sub-txt"> Auer, M., Reiestad, S. H., &
+                                    Griffiths, M. D. (2018).</span>
                             </div>
                             <!-- /.research-item -->
                             <div class="research-item researches__item">
-                                A brief overview of the Austrian gambling regulation and... Gaming Law Review, 22(9), 564-567.<span class="research-item__sub-txt"> Malischnig, D., Griffiths, M. D., & Auer, M. (2018).</span>
+                                A brief overview of the Austrian gambling regulation and... Gaming Law Review, 22(9),
+                                564-567.<span class="research-item__sub-txt"> Malischnig, D., Griffiths, M. D., & Auer,
+                                    M. (2018).</span>
                             </div>
                             <!-- /.research-item -->
                             <div class="research-item researches__item">
-                                The effect of loss-limit reminders on gambling behavior... Journal of Behavioral Addictions, 1-12.
+                                The effect of loss-limit reminders on gambling behavior... Journal of Behavioral
+                                Addictions, 1-12.
                                 <span class="research-item__sub-txt"> Auer, M., & Griffiths, M. D. (2018).</span>
                             </div>
                             <!-- /.research-item -->
                             <div class="research-item researches__item">
-                                Personalized Behavioral Feedback for Online. Journal of frontiers in Psychology, DOI 10.3389/fpsyg.2016.01875<span class="research-item__sub-txt"> Auer, M. & Griffiths, M. D. (2016).</span>
+                                Personalized Behavioral Feedback for Online. Journal of frontiers in Psychology, DOI
+                                10.3389/fpsyg.2016.01875<span class="research-item__sub-txt"> Auer, M. & Griffiths, M.
+                                    D. (2016).</span>
                             </div>
                             <!-- /.research-item -->
                         </div>
                         <div id="researches" class="researches collapse flex-column px-md-5">
                             <div class="research-item researches__item">
-                                Cognitive dissonance, personalized feedback... International Journal of Mental Health and Addiction, 16(3),631-641.<span class="research-item__sub-txt"> Auer, M., & Griffiths, M. D. (2018).</span>
+                                Cognitive dissonance, personalized feedback... International Journal of Mental Health
+                                and Addiction, 16(3),631-641.<span class="research-item__sub-txt"> Auer, M., &
+                                    Griffiths, M. D. (2018).</span>
                             </div>
                             <!-- /.research-item -->
                             <div class="research-item researches__item">
-                                Global Limit Setting as a Responsible ... International Journal of Mental Health and Addiction, 1-13.<span class="research-item__sub-txt"> Auer, M., Reiestad, S. H., & Griffiths, M. D. (2018).</span>
+                                Global Limit Setting as a Responsible ... International Journal of Mental Health and
+                                Addiction, 1-13.<span class="research-item__sub-txt"> Auer, M., Reiestad, S. H., &
+                                    Griffiths, M. D. (2018).</span>
                             </div>
                             <!-- /.research-item -->
                             <div class="research-item researches__item">
-                                A brief overview of the Austrian gambling regulation and... Gaming Law Review, 22(9), 564-567.<span class="research-item__sub-txt"> Malischnig, D., Griffiths, M. D., & Auer, M. (2018).</span>
+                                A brief overview of the Austrian gambling regulation and... Gaming Law Review, 22(9),
+                                564-567.<span class="research-item__sub-txt"> Malischnig, D., Griffiths, M. D., & Auer,
+                                    M. (2018).</span>
                             </div>
                             <!-- /.research-item -->
                             <div class="research-item researches__item">
-                                The effect of loss-limit reminders on gambling behavior... Journal of Behavioral Addictions, 1-12.
+                                The effect of loss-limit reminders on gambling behavior... Journal of Behavioral
+                                Addictions, 1-12.
                                 <span class="research-item__sub-txt"> Auer, M., & Griffiths, M. D. (2018).</span>
                             </div>
                             <!-- /.research-item -->
                             <div class="research-item researches__item">
-                                Personalized Behavioral Feedback for Online. Journal of frontiers in Psychology, DOI 10.3389/fpsyg.2016.01875<span class="research-item__sub-txt"> Auer, M. & Griffiths, M. D. (2016).</span>
+                                Personalized Behavioral Feedback for Online. Journal of frontiers in Psychology, DOI
+                                10.3389/fpsyg.2016.01875<span class="research-item__sub-txt"> Auer, M. & Griffiths, M.
+                                    D. (2016).</span>
                             </div>
                             <!-- /.research-item -->
                         </div>
-                        <button type="button" data-target="researches" class="link ml-md-5 mt-5 d-inline-block js-collapse">
+                        <button type="button" data-target="researches"
+                            class="link ml-md-5 mt-5 d-inline-block js-collapse">
                             <span>See more</span>
                             <svg class="link-arrow">
                                 <use xlink:href="img/svg/sprite.svg#ic-arrow-link"></use>
@@ -874,12 +899,230 @@
             </div>
         </section>
         <!-- /.research -->
+
+        <section id="news" class="news-preview">
+            <div class="wrapper">
+                <div class="row justify-content-between align-items-center  news-preview__title">
+                    <div class="col">
+                        <h2 class="section-heading">News</h2>
+                    </div>
+                    <div class="col-auto">
+                        <a href="/news.html" class="link">
+                            <span>See all</span>
+                            <svg class="link-arrow hide-sm">
+                                <use xlink:href="img/svg/sprite.svg#ic-arrow-link"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="slider" class="news-slider">
+                    <div class="news-slider-slide mb-5 mb-sm-0">
+
+                        <div class="news-card">
+                            <div class="news-card__img">
+                                <a href="/news/1.hrml">
+                                    <picture>
+                                        <source srcset="img/news/item-1.webp" type="image/webp">
+                                        <img src="img/news/item-1.jpg" alt="" loading="lazy">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="news-card__body">
+                                <div class="news-card__date">18 JUN 2020</div>
+                                <div class="news-card__title">THE EFFECTS OF PERSONALIZED FEEDBACK</div>
+                                <div class="news-card__description">
+                                    A recent publication with Swedish online players has shown the effectiveness of
+                                </div>
+                                <a href="/news/1.hrml" class="link">
+                                    <span>See more</span>
+                                    <svg class="link-arrow">
+                                        <use xlink:href="img/svg/sprite.svg#ic-arrow-link"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news-slider-slide mb-5 mb-sm-0">
+
+                        <div class="news-card">
+                            <div class="news-card__img">
+                                <a href="/news/3.hrml">
+                                    <picture>
+                                        <source srcset="img/news/item-3.webp" type="image/webp">
+                                        <img src="img/news/item-3.jpg" alt="" loading="lazy">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="news-card__body">
+                                <div class="news-card__date">10 MAR 2020</div>
+                                <div class="news-card__title">SPEAKING OF CUSTOMER INTERACTION</div>
+                                <div class="news-card__description">
+                                    We are happy to announce that SkillonNet chooses neccton as their Safer Gambling
+                                    Provider
+                                </div>
+                                <a href="/news/3.hrml" class="link">
+                                    <span>See more</span>
+                                    <svg class="link-arrow">
+                                        <use xlink:href="img/svg/sprite.svg#ic-arrow-link"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news-slider-slide mb-5 mb-sm-0">
+
+                        <div class="news-card">
+                            <div class="news-card__img">
+                                <a href="/news/2.hrml">
+                                    <picture>
+                                        <source srcset="img/news/item-2.webp" type="image/webp">
+                                        <img src="img/news/item-2.jpg" alt="" loading="lazy">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="news-card__body">
+                                <div class="news-card__date">14 AUG 2020</div>
+                                <div class="news-card__title">A COMPARISON OF CASINO PLAYERS AND SPORTS CASINO</div>
+                                <div class="news-card__description">
+                                    In this study with players from LeoVegas, the differences in behavior between two
+                                    groups of two groups of
+                                </div>
+                                <a href="/news/2.hrml" class="link">
+                                    <span>See more</span>
+                                    <svg class="link-arrow ">
+                                        <use xlink:href="img/svg/sprite.svg#ic-arrow-link"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news-slider-slide hide-sm">
+
+                        <div class="news-card">
+                            <div class="news-card__img">
+                                <a href="/news/1.hrml">
+                                    <picture>
+                                        <source srcset="img/news/item-1.webp" type="image/webp">
+                                        <img src="img/news/item-1.jpg" alt="" loading="lazy">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="news-card__body">
+                                <div class="news-card__date">18 JUN 2020</div>
+                                <div class="news-card__title">THE EFFECTS OF PERSONALIZED FEEDBACK</div>
+                                <div class="news-card__description">
+                                    A recent publication with Swedish online players has shown the effectiveness of...
+                                </div>
+                                <a href="/news/1.hrml" class="link">
+                                    <span>See more</span>
+                                    <svg class="link-arrow">
+                                        <use xlink:href="img/svg/sprite.svg#ic-arrow-link"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.wrapper -->
+        </section>
+        <!-- /.news-preview -->
+        <section id="getInTouch" class="get-in-touch git-section-cover">
+
+            <div class="wrapper">
+                <div class="row justify-content-between get-in-touch__row">
+                    <div class="col-12 col-md-6 col-lg-5 d-flex align-items-end get-in-touch__title">
+                        <h2 class="section-heading section-heading--white section-heading--lg px-4 px-sm-0">
+                            Get in touch with us
+                        </h2>
+                    </div>
+                    <div class="cf get-in-touch__form">
+                        <p class="cf__title">Let’s talk</p>
+                        <form class="cf-form" >
+                            <!--  was-validated -->
+                            <div class="form-group cf-form__form-group">
+                                <label for="inputText" class="font-weight-bold mb-2 d-inline-block">Name</label>
+                                <input type="text" class="form-control" id="inputText" aria-describedby="nameHelp" placeholder="Enter your name" required/>
+                                <div class="invalid-feedback">
+                                    Please choose a Name.
+                                </div>
+                            </div>
+                            <div class="form-group cf-form__form-group">
+                                <label for="inputEmail" class="font-weight-bold mb-2 mb-2 d-inline-block">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Please enter your email" required/>
+                                <div class="invalid-feedback">
+                                    Please choose a email.
+                                </div>
+                            </div>
+                            <div class="form-group cf-form__form-group">
+                                <label for="formControlTextarea" class="font-weight-bold mb-2 mb-2 d-inline-block">Message</label>
+                                <textarea class="form-control" id="formControlTextarea" rows="3" placeholder="Write here your message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--full">send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
-    <footer>
-  
+    <footer class="footer ">
+  <div class="wrapper">
+    <div class="row footer__inner justify-content-between">
+      <div class="col-12 ">
+        <div class="footer__logo">
+          <a href="index.html" class="brand-logo">
+  <img src="img/logo.svg" alt="neccton" />
+</a>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 mb-5 mb-lg-0 footer__contact">
+
+        <p class="mb-2">
+          <a class="text-decoration-none" href="+434852640860">T: +43-4852-64086-0</a>
+        </p>
+        <p class="mb-4 pb-2">
+          <a class="text-decoration-none" href="mailto:office@neccton.com">E: office@neccton.com</a>
+        </p>
+        <p>
+          Davidgasse 5, 7052 Muellendorf
+        </p>
+      </div>
+      <div class="col-12 col-lg-7">
+        <nav class="footer-nav">
+          <ul>
+            <li class="current-menu-item"><a class="js-scroll" href="#about">About</a></li>
+            <li><a class="js-scroll" href="#ref">References</a></li>
+            <li><a class="js-scroll" href="#getInTouch">Contact</a></li>
+            <li><a class="js-scroll" href="#services">Services and Solutions</a></li>
+            <li><a class="js-scroll" href="#research">Research</a></li>
+            <li><a href="/imprint.html">Imprint</a></li>
+            <li><a class="js-scroll" href="#numbers">Interesting numbers</a></li>
+            <li><a href="/news.html">News</a></li>
+            <li><a href="/policy.html">Privacy Policy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row footer__bottom">
+      <div class="col-12 d-flex flex-column flex-sm-row justify-content-between align-items-center">
+        <p class="order-1 order-sm-0 pt-5 pt-sm-0"> © Neccton 2020 All rights reserved </p>
+        <div class="social mb-5 mb-sm-0">
+          <a target="_blanc" class="social-item social-item--fb" href="https://facebook.com"></a>
+          <a target="_blanc" class="social-item social-item--in" href="https://instagram.com"></a>
+          <a target="_blanc" class="social-item social-item--you" href="https://youtube.com"></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
-    <script src="js/main.min.js"></script>
-    <script src="js/vendor.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
 </body>
 
 </html>

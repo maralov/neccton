@@ -33,7 +33,7 @@ body {
     min-height: 100%;
     color: $base-txt-color;
     background-color: #fff;
-
+    
     main {
         flex: 1 0 auto;
     }
@@ -68,16 +68,12 @@ a {
 .wrapper {
     width: 100%;
     @include wrapper();
-    @include sm(max-width, 100%);
-
-    @include md-block {
-        max-width: rem(720);
-        // padding-left: rem(24);
-        // padding-right: rem(24);
-    }
-
+    // @include from(1960px) {max-width: rem(1900)}
     @include lg(max-width, rem(950));
     @include xl(max-width, rem(1110));
+    @include md(max-width, rem(720));
+    @include sm(max-width, 100%);
+
 }
 
 .container {
@@ -116,3 +112,8 @@ a {
         background-color: #6276EE;
     }
 }
+
+.hide-sm {
+    @include sm (display, none);
+}
+

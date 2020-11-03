@@ -1,0 +1,302 @@
+@@include("../blocks/modules/head/head.html")
+
+<body>
+  <header id="header" class="wrapper-full header">
+    <div class="header__wrapper">
+      <div class="header__logo">
+        @@include("../blocks/components/brand-logo/brand-logo.html")
+      </div>
+      <nav class="header__nav header-nav">
+        <a href="index.html#about" class="header-nav__link">About</a>
+        <a href="index.html#services" class="header-nav__link">services and solutions</a>
+        <a href="index.html#news" class="header-nav__link">news</a>
+        <a href="index.html#cf" class="header-nav__link">Contact</a>
+      </nav>
+      <div class="header__menu-btn">
+        @@include("../blocks/components/toggle-menu-btn/index.html")
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="page-banner page-banner-cover d-flex align-items-center"
+      style="background-image: url('img/news/bg-item-1.jpg');">
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-12 col-lg-7 col-xl-5">
+            <p class="subtitle mb-3 pb-1">18 JUN 2020</p>
+            <h1 class="page-banner__title mb-3 pb-1">
+              The effects of personalized feedback
+            </h1>
+            <p class="page-banner__description mb-4 pb-3">
+              A recent publication with Swedish online players has shown the effectiveness of lorem
+            </p>
+            <a href="news/1.html" class="btn btn--primary">read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- page-banner -->
+    <section class="news-preview">
+      <div class="wrapper">
+        <h2 class="section-heading mb-4">News</h2>
+
+        <div class="news-filters mb-4 pb-3">
+          <button type="button" class="news-filters__item filter-btn is-checked" data-filter="all">All</button>
+          <button type="button" class="news-filters__item filter-btn" data-filter=".events">events</button>
+          <button type="button" class="news-filters__item filter-btn" data-filter=".news">News</button>
+        </div>
+
+        <div class="row js-news-filtred">
+          <div class="col-12 col-md-6 col-xl-4 mb-4 events mix">
+            <div class="news-card">
+              <div class="news-card__img">
+                  <a href="/news/3.hrml">
+                      <picture>
+                          <source srcset="img/news/item-3.webp" type="image/webp">
+                          <img src="img/news/item-3.jpg" alt="" loading="lazy">
+                      </picture>
+                  </a>
+              </div>
+              <div class="news-card__body">
+                  <div class="news-card__date">10 MAR 2020</div>
+                  <div class="news-card__title">SPEAKING OF CUSTOMER INTERACTION</div>
+                  <div class="news-card__description">
+                      We are happy to announce that SkillonNet chooses neccton as their Safer Gambling
+                      Provider
+                  </div>
+                  <a href="/news/3.hrml" class="link">
+                      <span>See more</span>
+                      <svg class="link-arrow">
+                          <use xlink:href="img/svg/sprite.svg#ic-arrow-link"></use>
+                      </svg>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 mb-4 news mix">
+            <div class="news-card">
+              <div class="news-card__img">
+                  <a href="/news/2.hrml">
+                      <picture>
+                          <source srcset="img/news/item-2.webp" type="image/webp">
+                          <img src="img/news/item-2.jpg" alt="" loading="lazy">
+                      </picture>
+                  </a>
+              </div>
+              <div class="news-card__body">
+                  <div class="news-card__date">14 AUG 2020</div>
+                  <div class="news-card__title">A COMPARISON OF CASINO PLAYERS AND SPORTS CASINO</div>
+                  <div class="news-card__description">
+                      In this study with players from LeoVegas, the differences in behavior between two
+                      groups of two groups of
+                  </div>
+                  <a href="/news/2.hrml" class="link">
+                      <span>See more</span>
+                      <svg class="link-arrow ">
+                          <use xlink:href="img/svg/sprite.svg#ic-arrow-link"></use>
+                      </svg>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 mb-4 events mix">
+            <div class="news-card">
+              <div class="news-card__img">
+                  <a href="/news/1.hrml">
+                      <picture>
+                          <source srcset="img/news/item-1.webp" type="image/webp">
+                          <img src="img/news/item-1.jpg" alt="" loading="lazy">
+                      </picture>
+                  </a>
+              </div>
+              <div class="news-card__body">
+                  <div class="news-card__date">18 JUN 2020</div>
+                  <div class="news-card__title">THE EFFECTS OF PERSONALIZED FEEDBACK</div>
+                  <div class="news-card__description">
+                      A recent publication with Swedish online players has shown the effectiveness of...
+                  </div>
+                  <a href="/news/1.hrml" class="link">
+                      <span>See more</span>
+                      <svg class="link-arrow">
+                          <use xlink:href="img/svg/sprite.svg#ic-arrow-link"></use>
+                      </svg>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 mb-4 news mix">
+            <div class="news-card">
+              <div class="news-card__img">
+                <a href="/news/3.hrml">
+                  <picture>
+                    <source srcset="img/news/item-3.webp" type="image/webp">
+                    <img src="img/news/item-3.jpg" alt="" loading="lazy">
+                  </picture>
+                </a>
+              </div>
+              <div class="news-card__body">
+                <div class="news-card__date">18 JUN 2020</div>
+                <div class="news-card__title">THE EFFECTS OF PERSONALIZED FEEDBACK</div>
+                <div class="news-card__description">
+                  A recent publication with Swedish online players has shown the effectiveness of
+                </div>
+                <a href="/news/1.hrml" class="link">
+                  <span>See more</span>
+                  <svg class="link-arrow">
+                    <use xlink:href="img/svg/sprite.svg#ic-arrow-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 mb-4 events mix">
+            <div class="news-card">
+              <div class="news-card__img">
+                <a href="/news/2.hrml">
+                  <picture>
+                    <source srcset="img/news/item-2.webp" type="image/webp">
+                    <img src="img/news/item-2.jpg" alt="" loading="lazy">
+                  </picture>
+                </a>
+              </div>
+              <div class="news-card__body">
+                <div class="news-card__date">18 JUN 2020</div>
+                <div class="news-card__title">THE EFFECTS OF PERSONALIZED FEEDBACK</div>
+                <div class="news-card__description">
+                  A recent publication with Swedish online players has shown the effectiveness has shown the effectiveness
+                </div>
+                <a href="/news/2.hrml" class="link">
+                  <span>See more</span>
+                  <svg class="link-arrow">
+                    <use xlink:href="img/svg/sprite.svg#ic-arrow-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 mb-4 events mix">
+            <div class="news-card">
+              <div class="news-card__img">
+                <a href="/news/2.hrml">
+                  <picture>
+                    <source srcset="img/news/item-2.webp" type="image/webp">
+                    <img src="img/news/item-2.jpg" alt="" loading="lazy">
+                  </picture>
+                </a>
+              </div>
+              <div class="news-card__body">
+                <div class="news-card__date">18 JUN 2020</div>
+                <div class="news-card__title">THE EFFECTS OF PERSONALIZED FEEDBACK</div>
+                <div class="news-card__description">
+                  A recent publication with Swedish online players has shown the effectiveness has shown the effectiveness
+                </div>
+                <a href="/news/2.hrml" class="link">
+                  <span>See more</span>
+                  <svg class="link-arrow">
+                    <use xlink:href="img/svg/sprite.svg#ic-arrow-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- /.news-preview -->
+    <section id="getInTouch" class="get-in-touch git-section-cover">
+
+      <div class="wrapper">
+        <div class="row justify-content-between get-in-touch__row">
+          <div class="col-12 col-md-6 col-lg-5 d-flex align-items-end get-in-touch__title">
+            <h2 class="section-heading section-heading--white section-heading--lg px-4 px-sm-0">
+              Get in touch with us
+            </h2>
+          </div>
+          <div class="cf get-in-touch__form">
+            <p class="cf__title">Let’s talk</p>
+            <form class="cf-form">
+              <!--  was-validated -->
+              <div class="form-group cf-form__form-group">
+                <label for="inputText" class="font-weight-bold mb-2 d-inline-block">Name</label>
+                <input type="text" class="form-control" id="inputText" aria-describedby="nameHelp"
+                  placeholder="Enter your name" required />
+                <div class="invalid-feedback">
+                  Please choose a Name.
+                </div>
+              </div>
+              <div class="form-group cf-form__form-group">
+                <label for="inputEmail" class="font-weight-bold mb-2 mb-2 d-inline-block">Email</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                  placeholder="Please enter your email" required />
+                <div class="invalid-feedback">
+                  Please choose a email.
+                </div>
+              </div>
+              <div class="form-group cf-form__form-group">
+                <label for="formControlTextarea" class="font-weight-bold mb-2 mb-2 d-inline-block">Message</label>
+                <textarea class="form-control" id="formControlTextarea" rows="3"
+                  placeholder="Write here your message"></textarea>
+              </div>
+              <button type="submit" class="btn btn--full">send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- get-in-touch -->
+  </main>
+  <footer class="footer ">
+    <div class="wrapper">
+      <div class="row footer__inner justify-content-between">
+        <div class="col-12 ">
+          <div class="footer__logo">
+            @@include("../blocks/components/brand-logo/brand-logo.html")
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 footer__contact">
+
+          <p class="mb-2">
+            <a class="text-decoration-none" href="+434852640860">T: +43-4852-64086-0</a>
+          </p>
+          <p class="mb-4 pb-2">
+            <a class="text-decoration-none" href="mailto:office@neccton.com">E: office@neccton.com</a>
+          </p>
+          <p>
+            Davidgasse 5, 7052 Muellendorf
+          </p>
+        </div>
+        <div class="col-12 col-lg-7">
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#ref">References</a></li>
+              <li><a href="#getInTouch" class="js-scroll">Contact</a></li>
+              <li><a href="index.html#services">Services and Solutions</a></li>
+              <li><a href="index.html#research">Research</a></li>
+              <li><a href="/imprint.html">Imprint</a></li>
+              <li><a href="index.html#numbers">Interesting numbers</a></li>
+              <li class="current-menu-item"><a href="/news.html">News</a></li>
+              <li><a href="/policy.html">Privacy Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="row footer__bottom">
+        <div class="col-12 d-flex flex-column flex-sm-row justify-content-between align-items-center">
+          <p class="order-1 order-sm-0 pt-5 pt-sm-0"> © Neccton 2020 All rights reserved </p>
+          <div class="social mb-5 mb-sm-0">
+            <a target="_blanc" class="social-item social-item--fb" href="https://facebook.com"></a>
+            <a target="_blanc" class="social-item social-item--in" href="https://instagram.com"></a>
+            <a target="_blanc" class="social-item social-item--you" href="https://youtube.com"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+</body>
+
+</html>

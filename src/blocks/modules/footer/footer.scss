@@ -1,0 +1,53 @@
+.footer {
+  background: url('../img/bg-footer-img.png') no-repeat 90% 100% / contain $footer-bg;
+  padding-top: 100px;
+
+  @include sm-block {
+    padding-top: 80px;
+    background-position: 25% 110%;
+    background-size: 180%;
+  }
+
+  font-weight: 300;
+  letter-spacing: 1px;
+  &__contact {
+    color: rgba(255, 255, 255, 0.87);
+
+    a {
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+        
+      }
+    }
+  }
+
+  &__logo {
+    width: 254px;
+    margin-bottom : 44px;
+    @include sm-block {
+      margin-bottom : 20px;
+    }
+  }
+
+  &__inner {
+    margin-bottom: 70px;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.29);
+    padding: 20px 0;
+    color: $footer-nav-txt-color;
+    font-size: rem(18);
+    background: $footer-bg;
+
+    @include media-breakpoint-down(sm) {
+      padding: 40px 0;
+      background: $transparent;
+    }
+
+  }
+}

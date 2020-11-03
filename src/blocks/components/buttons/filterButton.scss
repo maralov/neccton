@@ -1,0 +1,15 @@
+.filter-btn {
+  @include  button-reset();
+  display: inline-flex;
+  background-color: $transparent;
+  color: $filter-btn-txt-color;
+  text-transform: uppercase;
+
+  @include hover {
+    color: $filter-btn-active-txt-color;
+  }
+
+  &.is-checked {
+    color: $filter-btn-active-txt-color;
+  }
+}
