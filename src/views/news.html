@@ -6,7 +6,7 @@
       <div class="header__logo">
         @@include("../blocks/components/brand-logo/brand-logo.html")
       </div>
-      <nav class="header__nav header-nav">
+      <nav id="headerNav" class="header__nav header-nav">
         <a href="index.html#about" class="header-nav__link">About</a>
         <a href="index.html#services" class="header-nav__link">services and solutions</a>
         <a href="index.html#news" class="header-nav__link">news</a>
@@ -14,6 +14,19 @@
       </nav>
       <div class="header__menu-btn">
         @@include("../blocks/components/toggle-menu-btn/index.html")
+      </div>
+      <div id="mainMenu" class="main-menu">
+        <div class="wrapper d-flex  justify-content-md-end">
+          <nav class="main-menu-list">
+            <a class="main-menu-list__item" href="index.html#about">About</a>
+            <a class="main-menu-list__item" href="index.html#services">services and solutions</a>
+            <a class="main-menu-list__item" href="index.html#numbers">interesting numbers</a>
+            <a class="main-menu-list__item" href="index.html#ref">references</a>
+            <a class="main-menu-list__item" href="index.html#research">research</a>
+            <a class="main-menu-list__item is-active" href="/news.html">news</a>
+            <a class="main-menu-list__item" href="index.html#getInTouch">Contact</a>
+          </nav>
+        </div>
       </div>
     </div>
   </header>

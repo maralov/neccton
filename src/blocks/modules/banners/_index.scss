@@ -10,6 +10,11 @@
   }
 
   @include sm-block {
-      padding: rem(95) 0;
+    padding: rem(195) 0 rem(95);
+  }
+
+  @media screen and (max-width: 376px) {
+    padding: 8.1875rem 0 rem(95);
+    
   }
 }

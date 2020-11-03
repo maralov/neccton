@@ -1,0 +1,58 @@
+.main-menu {
+  overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	z-index: 100;
+	padding: 30px 10px;
+	position: fixed;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: visibility 0.8s ease 0s;
+  display: none;
+  
+  background: linear-gradient(271.28deg, rgba(22, 21, 51, 0.56) 1.26%, #101020 87.53%);
+
+  @include sm-block {
+    background: #101020
+  }
+
+  &-list {
+    margin-top: 95px;
+    color: white;
+
+    @include sm-block {
+      color: #4C4C58;
+    }
+
+    &__item {
+      display: block;
+      font-weight: 600;
+      font-size: 48px;
+      text-transform: uppercase;
+      opacity: .15;
+      transition: all .3 ease;
+
+      &.is-active {
+        opacity: 1!important;
+        @include sm-block {
+          color: white;
+        }
+      }
+
+      @include lg-block {
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+      }
+      @include sm-block {
+        font-size: 22px;
+        opacity: 1!important;
+
+        &:not(:last-child) {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}

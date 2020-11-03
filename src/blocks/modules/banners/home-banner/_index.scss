@@ -6,9 +6,9 @@
     padding: rem(241) 0 rem(80);
   }
   
-  @include sm-block {
-    padding-top: rem(95);
-  }
+  // @include sm-block {
+  //   padding-top: rem(95);
+  // }
 
   @include xs-block {
     padding: 100px 0 55px;

@@ -23,7 +23,7 @@
         <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
         <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/main.min.css">
     </head>
     <body>
         <header id="header" class="wrapper-full header">
@@ -33,7 +33,7 @@
   <img src="img/logo.svg" alt="neccton" />
 </a>
     </div>
-    <nav class="header__nav header-nav">
+    <nav id="headerNav" class="header__nav header-nav">
       <a href="#about" class="js-scroll header-nav__link">About</a>
       <a href="#services" class="js-scroll header-nav__link">services and solutions</a>
       <a href="/news.html" class="header-nav__link">news</a>
@@ -45,6 +45,20 @@
   <span></span>
   <span></span>
 </button>
+    </div>
+  </div>
+
+  <div id="mainMenu" class="main-menu">
+    <div class="wrapper d-flex  justify-content-md-end">
+      <nav class="main-menu-list">
+        <a class="main-menu-list__item js-scroll" href="#about">About</a>
+        <a class="main-menu-list__item js-scroll" href="#services">services and solutions</a>
+        <a class="main-menu-list__item js-scroll" href="#numbers">interesting numbers</a>
+        <a class="main-menu-list__item js-scroll is-active" href="#ref">references</a>
+        <a class="main-menu-list__item js-scroll" href="#research">research</a>
+        <a class="main-menu-list__item" href="/news.html">news</a>
+        <a class="main-menu-list__item js-scroll" href="#getInTouch">Contact</a>
+      </nav>
     </div>
   </div>
 </header>
@@ -99,7 +113,7 @@
     </div>
   </div>
 </footer>
-        <script src="js/pageB.js"></script>
-        <script src="js/vendor.js"></script>
+        <script src="js/pageB.min.js"></script>
+        <script src="js/vendor.min.js"></script>
     </body>
 </html>
