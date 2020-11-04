@@ -31,7 +31,7 @@
     <link rel="preload" href="fonts/Gibson-Light.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/Gibson.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/Gibson-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
@@ -1057,25 +1057,29 @@
                     </div>
                     <div class="cf get-in-touch__form">
                         <p class="cf__title">Let’s talk</p>
-                        <form class="cf-form" >
+                        <form class="cf-form" id="js-form-contacts">
                             <!--  was-validated -->
                             <div class="form-group cf-form__form-group">
                                 <label for="inputText" class="font-weight-bold mb-2 d-inline-block">Name</label>
-                                <input type="text" class="form-control" id="inputText" aria-describedby="nameHelp" placeholder="Enter your name" required/>
+                                <input type="text" class="form-control" id="inputText" name="name"
+                                    aria-describedby="nameHelp" placeholder="Enter your name" required />
                                 <div class="invalid-feedback">
                                     Please choose a Name.
                                 </div>
                             </div>
                             <div class="form-group cf-form__form-group">
                                 <label for="inputEmail" class="font-weight-bold mb-2 mb-2 d-inline-block">Email</label>
-                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Please enter your email" required/>
+                                <input type="email" name="email" class="form-control" id="inputEmail"
+                                    aria-describedby="emailHelp" placeholder="Please enter your email" required />
                                 <div class="invalid-feedback">
                                     Please choose a email.
                                 </div>
                             </div>
                             <div class="form-group cf-form__form-group">
-                                <label for="formControlTextarea" class="font-weight-bold mb-2 mb-2 d-inline-block">Message</label>
-                                <textarea class="form-control" id="formControlTextarea" rows="3" placeholder="Write here your message"></textarea>
+                                <label for="formControlTextarea"
+                                    class="font-weight-bold mb-2 mb-2 d-inline-block">Message</label>
+                                <textarea class="form-control" id="formControlTextarea" name="text" rows="3"
+                                    placeholder="Write here your message"></textarea>
                             </div>
                             <button type="submit" class="btn btn--full">send</button>
                         </form>
@@ -1135,8 +1139,8 @@
     </div>
   </div>
 </footer>
-    <script src="js/main.min.js"></script>
-    <script src="js/vendor.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
 </body>
 
 </html>
