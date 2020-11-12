@@ -1,119 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>New Page</title>
-        <meta name="theme-color" content="#c9e0e04d">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="styles/main.min.css">
-    </head>
-    <body>
-        <header id="header" class="wrapper-full header">
-  <div class="header__wrapper">
-    <div class="header__logo">
-      <a href="index.html" class="brand-logo">
-  <img src="img/logo.svg" alt="neccton" />
-</a>
-    </div>
-    <nav id="headerNav" class="header__nav header-nav">
-      <a href="#about" class="js-scroll header-nav__link">About</a>
-      <a href="#services" class="js-scroll header-nav__link">services and solutions</a>
-      <a href="/news.html" class="header-nav__link">news</a>
-      <a href="#getInTouch" class="js-scroll header-nav__link">Contact</a>
-    </nav>
-    <div class="header__menu-btn">
-      <button class="toggle-menu js-toggle-menu">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="../img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="../img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="../img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="../img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="../img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="preload" href="../fonts/Gibson-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/Gibson.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/Gibson-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/Gibson-Light.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/Gibson.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/Gibson-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/main.min.css">
+</head>
+
+<body>
+    <header id="header" class="wrapper-full header">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <a href="index.html" class="brand-logo">
+                    <img src="../img/logo.svg" alt="neccton" />
+                </a>
+            </div>
+            <nav id="headerNav" class="header__nav header-nav">
+                <a href="../index.html#about" class="header-nav__link">About</a>
+                <a href="../index.html#services" class="header-nav__link">services and solutions</a>
+                <a href="../index.html#news" class="header-nav__link">news</a>
+                <a href="../index.html#cf" class="header-nav__link">Contact</a>
+            </nav>
+            <div class="header__menu-btn">
+                <button class="toggle-menu js-toggle-menu">
   <span></span>
   <span></span>
   <span></span>
 </button>
-    </div>
-  </div>
-
-  <div id="mainMenu" class="main-menu">
-    <div class="wrapper d-flex  justify-content-md-end">
-      <nav class="main-menu-list">
-        <a class="main-menu-list__item js-scroll" href="#about">About</a>
-        <a class="main-menu-list__item js-scroll" href="#services">services and solutions</a>
-        <a class="main-menu-list__item js-scroll" href="#numbers">interesting numbers</a>
-        <a class="main-menu-list__item js-scroll is-active" href="#ref">references</a>
-        <a class="main-menu-list__item js-scroll" href="#research">research</a>
-        <a class="main-menu-list__item" href="/news.html">news</a>
-        <a class="main-menu-list__item js-scroll" href="#getInTouch">Contact</a>
-      </nav>
-    </div>
-  </div>
-</header>
-        <h1>New Page</h1>
-        <footer class="footer ">
-  <div class="wrapper">
-    <div class="row footer__inner justify-content-between">
-      <div class="col-12 ">
-        <div class="footer__logo">
-          <a href="index.html" class="brand-logo">
-  <img src="img/logo.svg" alt="neccton" />
-</a>
+            </div>
+            <div id="mainMenu" class="main-menu">
+                <div class="wrapper d-flex  justify-content-md-end">
+                    <nav class="main-menu-list">
+                        <a class="main-menu-list__item" href="../index.html#about">About</a>
+                        <a class="main-menu-list__item" href="../index.html#services">services and solutions</a>
+                        <a class="main-menu-list__item" href="../index.html#numbers">interesting numbers</a>
+                        <a class="main-menu-list__item" href="../index.html#ref">references</a>
+                        <a class="main-menu-list__item" href="../index.html#research">research</a>
+                        <a class="main-menu-list__item is-active" href="../news.html">news</a>
+                        <a class="main-menu-list__item" href="../index.html#getInTouch">Contact</a>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-12 col-lg-4 mb-5 mb-lg-0 footer__contact">
+    </header>
+    <main>
+        <section class="page-banner page-banner-cover d-flex align-items-end pb-5"
+            style="background-image: url('../img/news/bg-item-1.jpg');">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-12 col-lg-7 col-xl-5">
+                        <h1 class="page-banner__title mb-3 pb-1">
+                            The effects of personalized feedback
+                        </h1>
+                        <p class="page-banner__description mb-4 pb-3">
+                            A recent publication with Swedish online players has shown the effectiveness of lorem
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- page-banner -->
 
-        <p class="mb-2">
-          <a class="text-decoration-none" href="+434852640860">T: +43-4852-64086-0</a>
-        </p>
-        <p class="mb-4 pb-2">
-          <a class="text-decoration-none" href="mailto:office@neccton.com">E: office@neccton.com</a>
-        </p>
-        <p>
-          Davidgasse 5, 7052 Muellendorf
-        </p>
-      </div>
-      <div class="col-12 col-lg-7">
-        <nav class="footer-nav">
-          <ul>
-            <li class="current-menu-item"><a class="js-scroll" href="#about">About</a></li>
-            <li><a class="js-scroll" href="#ref">References</a></li>
-            <li><a class="js-scroll" href="#getInTouch">Contact</a></li>
-            <li><a class="js-scroll" href="#services">Services and Solutions</a></li>
-            <li><a class="js-scroll" href="#research">Research</a></li>
-            <li><a href="/imprint.html">Imprint</a></li>
-            <li><a class="js-scroll" href="#numbers">Interesting numbers</a></li>
-            <li><a href="/news.html">News</a></li>
-            <li><a href="/policy.html">Privacy Policy</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <div class="row footer__bottom">
-      <div class="col-12 d-flex flex-column flex-sm-row justify-content-between align-items-center">
-        <p class="order-1 order-sm-0 pt-5 pt-sm-0"> © Neccton 2020 All rights reserved </p>
-        <div class="social mb-5 mb-sm-0">
-          <a target="_blanc" class="social-item social-item--fb" href="https://facebook.com"></a>
-          <a target="_blanc" class="social-item social-item--in" href="https://instagram.com"></a>
-          <a target="_blanc" class="social-item social-item--you" href="https://youtube.com"></a>
+    </main>
+    <footer class="footer ">
+        <div class="wrapper">
+            <div class="row footer__inner justify-content-between">
+                <div class="col-12 ">
+                    <div class="footer__logo">
+                        <a href="index.html" class="brand-logo">
+                            <img src="../img/logo.svg" alt="neccton" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 footer__contact">
+
+                    <p class="mb-2">
+                        <a class="text-decoration-none" href="+434852640860">T: +43-4852-64086-0</a>
+                    </p>
+                    <p class="mb-4 pb-2">
+                        <a class="text-decoration-none" href="mailto:office@neccton.com">E: office@neccton.com</a>
+                    </p>
+                    <p>
+                        Davidgasse 5, 7052 Muellendorf
+                    </p>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="../index.html#about">About</a></li>
+                            <li><a href="../index.html#ref">References</a></li>
+                            <li><a href="../index.html#getInTouch">Contact</a></li>
+                            <li><a href="../index.html#services">Services and Solutions</a></li>
+                            <li><a href="../index.html#research">Research</a></li>
+                            <li><a href="../imprint.html">Imprint</a></li>
+                            <li><a href="../index.html#numbers">Interesting numbers</a></li>
+                            <li class="current-menu-item"><a href="/news.html">News</a></li>
+                            <li><a href="../policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row footer__bottom">
+                <div class="col-12 d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                    <p class="order-1 order-sm-0 pt-5 pt-sm-0"> © Neccton 2020 All rights reserved </p>
+                    <div class="social mb-5 mb-sm-0">
+                        <a target="_blanc" class="social-item social-item--fb" href="https://facebook.com"></a>
+                        <a target="_blanc" class="social-item social-item--in" href="https://instagram.com"></a>
+                        <a target="_blanc" class="social-item social-item--you" href="https://youtube.com"></a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</footer>
-        <script src="js/pageB.min.js"></script>
-        <script src="js/vendor.min.js"></script>
-    </body>
+    </footer>
+    <script src="../js/main.min.js"></script>
+    <script src="../js/vendor.min.js"></script>
+</body>
+
 </html>

@@ -47,6 +47,9 @@
     color: $txt-muted;
     font-weight: 400;
     margin-bottom: 16px;
+    line-height: 21px;
+    min-height: calc(21px * 1);
+    text-transform: uppercase;
   }
 
   &__title {
@@ -56,8 +59,7 @@
     overflow: hidden;
     height: calc(26px * 2);
     position: relative;
-
-    
+    text-transform: uppercase;
   }
 
   &__description {
