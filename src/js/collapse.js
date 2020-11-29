@@ -2,10 +2,13 @@ import $ from 'jquery';
 
 (function ($) {
   $(function () {
-    //$('.collapse').slideUp();
 
     $('.js-collapse').on('click', function () {
       const target = $(this).data('target');
+      let targetlinkText = $(this).data('link-text');
+
+      if (targetlinkText === null || targetlinkText === undefined) targetlinkText = ""
+
       const targetElem = $(`#${target}`);
 
       targetElem.slideToggle({
@@ -16,11 +19,8 @@ import $ from 'jquery';
 
       $(this).find('span').text()
       let linkText = $(this).find('span').text();
-      console.log(linkText);
-
-      linkText == "See more" ? linkText = `Less ${target}` : linkText = "See more";
-
-      console.log(linkText);
+      
+      linkText == "See more" ? linkText = `Less ${targetlinkText}` : linkText = "See more";
 
       $(this).find('span').text(linkText);
 

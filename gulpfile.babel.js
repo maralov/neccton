@@ -33,11 +33,11 @@ const requireDir = require("require-dir"),
         },
         images: {
             src: [
-                "./src/img/**/*.{jpg,jpeg,png,gif,tiff,svg}",
+                "./src/img/**/*.{jpg,jpeg,png,gif,tiff,svg,pdf}",
                 "!./src/img/favicon/*.{jpg,jpeg,png,gif,tiff}"
             ],
             dist: "./dist/img/",
-            watch: "./src/img/**/*.{jpg,jpeg,png,gif,svg,tiff}"
+            watch: "./src/img/**/*.{jpg,jpeg,png,gif,svg,tiff,pdf}"
         },
         sprites: {
             src: "./src/img/svg/*.svg",
@@ -54,7 +54,7 @@ const requireDir = require("require-dir"),
             dist: "./dist/img/favicons/",
         },
         gzip: {
-            src: ["./src/.htaccess", "./src/mail.php"],
+            src: ["./src/.htaccess", "./mail.php"],
             dist: "./dist/"
         }
     };

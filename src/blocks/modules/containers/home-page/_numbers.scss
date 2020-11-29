@@ -71,38 +71,45 @@
   // .number-block__ring
 
   &__ring {
-    @include center-absolute;
+    top: -25%;
+    left: -35%;
+    // transform: translate(-50%, -50%);
+    will-change: transform, opacity;
+    position: absolute;
     opacity:0;
     transition: opacity .5s ease;
     border-radius:50%;
     border:3px solid ;
     height: 140%;
-    width: 160%;
-    @include hover {
-      animation: 3s rotate infinite linear;
+    width: 170%;
+    &:hover {
+      animation: 3s rotate infinite 0.01s linear ;
       &:after {
-        animation: 5s rotate infinite linear;
+        animation: 5s rotate infinite 0.01s linear;
       }
       &:before{
-        animation: 7s rotate infinite linear;
+        animation: 7s rotate infinite 0.01s linear;
       }
     }
 
-    @include md-block {
-      animation: 3s rotate infinite linear;
+    @include lg-block {
+      opacity:1;
+      animation: 3s rotate infinite 0.01s linear;
     }
     
     @include sm-block {
-      height: 185px;
+      height: 170px;
       width: 165px;
+      top: -20%;
+      left: -20%;
     }
 
     &:before,
     &:after {
       content:'';
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) ;
+      top: 0%;
+      left: 0%;
+      // transform: translate(-50%, -50%) ;
       position: absolute;
       border-radius:50%;
       border-style: solid;
@@ -113,7 +120,7 @@
       height: 102%;
       width: 98%;
       @include md-block {
-        animation: 5s rotate infinite linear;
+        animation: 5s rotate infinite 0.01s linear;
       }
     }
     &:after {
@@ -122,7 +129,7 @@
       width: 102%;
       transition: opacity .5s ease;
       @include md-block {
-        animation: 4s rotate infinite linear;
+        animation: 4s rotate infinite 0.01s linear;
       }
     }
   }
@@ -162,11 +169,12 @@
 }
 
 @keyframes rotate {
-  from { 
+  0% { 
     opacity:1;
+    transform: rotate(00deg) ;
   }
-  to {    
+  100% {    
     opacity:1;
-    transform:  translate(-50%, -50%) rotate(360deg);
+    transform: rotate(360deg) ;
   }
 }
