@@ -15,7 +15,7 @@
             </div>
         </section>
         <!-- banner -->
-        
+
         @@include("../blocks/modules/containers/home-page/services-solution/layout.html")
         <section id="numbers" class="numbers">
             <div class="wrapper">
@@ -91,6 +91,33 @@
                 <div class="row">
                     <div class="ref__col col-6 col-md-3 p-0">
                         <div class="ref-item">
+                            <img src="img/ref/ref-27.svg" alt="" loading="lazy">
+                        </div>
+                        <!-- /.ref-item -->
+                    </div>
+                    <!-- /.col-6 col-sm-3 p-0 -->
+                    <div class="ref__col col-6 col-md-3 p-0">
+                        <div class="ref-item">
+                            <picture>
+                                <source srcset="img/ref/ref-26.webp" type="image/webp">
+                                <img src="img/ref/ref-26.png" alt="" loading="lazy">
+                            </picture>
+                        </div>
+                        <!-- /.ref-item -->
+                    </div>
+                    <!-- /.col-6 col-sm-3 p-0 -->
+                    <div class="ref__col col-6 col-md-3 p-0">
+                        <div class="ref-item">
+                            <picture>
+                                <source srcset="img/ref/ref-25.webp" type="image/webp">
+                                <img src="img/ref/ref-25.png" alt="" loading="lazy">
+                            </picture>
+                        </div>
+                        <!-- /.ref-item -->
+                    </div>
+                    <!-- /.col-6 col-sm-3 p-0 -->
+                    <div class="ref__col col-6 col-md-3 p-0">
+                        <div class="ref-item">
                             <picture>
                                 <source srcset="img/ref/ref-1.webp" type="image/webp">
                                 <img src="img/ref/ref-1.png" alt="" loading="lazy">
@@ -139,6 +166,9 @@
                         <!-- /.ref-item -->
                     </div>
                     <!-- /.col-6 col-sm-3 p-0 -->
+                </div>
+
+                <div id="references" class="row collapse">
                     <div class="ref__col col-6 col-md-3 p-0">
                         <div class="ref-item">
                             <picture>
@@ -169,8 +199,6 @@
                         <!-- /.ref-item -->
                     </div>
                     <!-- /.col-6 col-sm-3 p-0 -->
-                </div>
-                <div id="references" class="row collapse">
                     <div class="ref__col col-6 col-md-3 p-0">
                         <div class="ref-item">
                             <picture>
@@ -332,16 +360,17 @@
                     </div>
                     <!-- /.col-6 col-sm-3 p-0 -->
                 </div>
-                <button type="button" data-target="references" data-link-text="references" class="link mt-5 d-inline-block js-collapse">
+                <button type="button" data-target="references" data-link-text="references"
+                    class="link mt-5 d-inline-block js-collapse">
                     <span>See more</span>
                     <svg class="link-arrow">
                         <use xlink:href="img/svg/sprite.svg#ic-arrow-link"></use>
                     </svg>
                 </button>
         </section>
-		<!-- ref -->
-		@@include("../blocks/modules/containers/home-page/research/layout.html")
-		@@include("../blocks/modules/containers/home-page/news/layout.html")
+        <!-- ref -->
+        @@include("../blocks/modules/containers/home-page/research/layout.html")
+        @@include("../blocks/modules/containers/home-page/news/layout.html")
 
         <section id="about" class="about-section">
             <div class="wrapper">
@@ -402,7 +431,7 @@
                             <div class="form-group cf-form__form-group">
                                 <label for="inputText" class="font-weight-bold mb-2 d-inline-block">Name</label>
                                 <input type="text" class="form-control" id="inputText" name="name"
-                                     placeholder="Enter your name" required />
+                                    placeholder="Enter your name" required />
                                 <div class="invalid-feedback">
                                     Please choose a Name.
                                 </div>
