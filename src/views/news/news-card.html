@@ -1,0 +1,28 @@
+<div class="col-12 col-md-6 col-xl-4 mb-4 mix @@filterType">
+
+  <div class="news-card">
+    <div class="news-card__img">
+      <a target="_blank" href="@@link">
+        <picture>
+          <source srcset="img/news/@@imgName.webp" type="image/webp">
+          <img src="img/news/@@imgName.jpg" alt="@@title" loading="lazy" width="370" height="250" />
+        </picture>
+      </a>
+    </div>
+    <!-- .news-card__img -->
+    <div class="news-card__body">
+      <div class="news-card__date">@@date</div>
+      <div class="news-card__title">@@title</div>
+      <div class="news-card__description">
+        @@description
+      </div>
+      <a target="_blank" href="@@link" class="link">
+        <span>See more</span>
+        <svg class="link-arrow">
+          <use xlink:href="img/svg/sprite.svg#ic-arrow-link"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <!-- .news-card -->
+</div>

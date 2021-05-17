@@ -1,0 +1,29 @@
+[
+    {
+        "title": "ComeOn adds AML module to Neccton partnership",
+        "description": "The ComeOn Group has announced an extension of its ongoing partnership with Neccton, by utilising the anti-money laundering module within the group’s mentor software package.",
+        "date": "May 2021",
+        "link": "https://www.casinobeats.com/2021/05/10/comeon-adds-aml-module-to-neccton-partnership/",
+        "imgName": "comeonaml_card",
+        "sliderClass": "mb-5 mb-sm-0",
+        "filterType": "news"
+    },
+    {
+        "title": "Neccton's Dr. Michael Auer featured on the title page of Intergaming",
+        "description": "Dr. Michael Auer's article discusses the convergence between Responsible Gaming, AML and FRAUD",
+        "date": "April 2021",
+        "link": "https://#",
+        "imgName": "intergaming_card",
+        "sliderClass": "mb-5 mb-sm-0",
+        "filterType": "news"
+    },
+    {
+        "title": "PlayOJO integrates mentor",
+        "description": "The popular UK online-casino brand PlayOJO bolsters their RG with neccton's mentor",
+        "date": "April 2021",
+        "link": "https://igamingbusiness.com/playojo-launches-new-responsible-gambling-tool/",
+        "imgName": "playojo",
+        "sliderClass": "mb-5 mb-sm-0",
+        "filterType": "news"
+    }
+]
