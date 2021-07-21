@@ -1,5 +1,23 @@
 [
     {
+        "title": "Play North adopts Neccton’s mentor software",
+        "description": "Malta-based Play North has become the latest igaming group to join the growing roster of firm’s to sign-up to utilise Neccton’s mentor player protection software",
+        "date": "July 2021",
+        "link": "https://www.casinobeats.com/2021/06/17/play-north-adopts-necctons-mentor-software/",
+        "imgName": "shutterstock_card",
+        "sliderClass": "mb-5 mb-sm-0",
+        "filterType": "news"
+    },
+    {
+        "title": "New academic study by Niklas Hopfgartner, Dr. Michael Auer and Dr. Mark Griffiths",
+        "description": "Social Facilitation Among Gamblers:A Large-Scale Study Using Account-Based Data",
+        "date": "June 2021",
+        "link": "https://ojs.aaai.org/index.php/ICWSM/article/view/18052/17855",
+        "imgName": "no-pic",
+        "sliderClass": "mb-5 mb-sm-0",
+        "filterType": "news"
+    },
+    {
         "title": "ComeOn adds AML module to Neccton partnership",
         "description": "The ComeOn Group has announced an extension of its ongoing partnership with Neccton, by utilising the anti-money laundering module within the group’s mentor software package.",
         "date": "May 2021",
@@ -12,9 +30,9 @@
         "title": "Neccton's Dr. Michael Auer featured on the title page of Intergaming",
         "description": "Dr. Michael Auer's article discusses the convergence between Responsible Gaming, AML and FRAUD",
         "date": "April 2021",
-        "link": "https://#",
+        "link": "#",
         "imgName": "intergaming_card",
-        "sliderClass": "mb-5 mb-sm-0",
+        "sliderClass": "",
         "filterType": "news"
     },
     {
@@ -23,7 +41,7 @@
         "date": "April 2021",
         "link": "https://igamingbusiness.com/playojo-launches-new-responsible-gambling-tool/",
         "imgName": "playojo",
-        "sliderClass": "mb-5 mb-sm-0",
+        "sliderClass": "",
         "filterType": "news"
     }
 ]
