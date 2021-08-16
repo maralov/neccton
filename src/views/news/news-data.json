@@ -1,5 +1,14 @@
 [
     {
+        "title": "Neccton increases iGaming market dominance in Germany",
+        "description": "Player protection specialists Neccton have increased their market dominance in Germany after reaching an agreement to provide their software to leading online operator NOVO INTERACTIVE GmbH.",
+        "date": "August 2021",
+        "link": "https://europeangaming.eu/portal/latest-news/2021/08/02/97052/neccton-increases-igaming-market-dominance-in-germany/",
+        "imgName": "payment-methods-germany_card",
+        "sliderClass": "mb-5 mb-sm-0",
+        "filterType": "news"
+    },
+    {
         "title": "Play North adopts Neccton’s mentor software",
         "description": "Malta-based Play North has become the latest igaming group to join the growing roster of firm’s to sign-up to utilise Neccton’s mentor player protection software",
         "date": "July 2021",
@@ -23,7 +32,7 @@
         "date": "May 2021",
         "link": "https://www.casinobeats.com/2021/05/10/comeon-adds-aml-module-to-neccton-partnership/",
         "imgName": "comeonaml_card",
-        "sliderClass": "mb-5 mb-sm-0",
+        "sliderClass": "",
         "filterType": "news"
     },
     {
